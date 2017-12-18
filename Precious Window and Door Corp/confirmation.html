@@ -1,0 +1,99 @@
+<!--
+      Project: Create a website for Precious Window & Door Dorp.
+      
+      This is the Confirmation page for request of quote from Precious Window & Door Corp. Website 
+
+      Author: Li
+      Date:   12/13/2017
+
+      Filename: confirmation.html
+   -->
+   
+ <!doctype html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Precious Window and Door Corp</title>
+	<!-- Bootstrap compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery Library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="modernizr.custom.65897.js"></script>
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Lobster|Merriweather|Rozha+One|Lobster+Two|Noto+Sans|PT+Serif" rel="stylesheet">
+	<!-- Local stylesheet -->
+	<link rel="stylesheet" href="css/styles.css">
+ </head>
+ <body>
+	<div class="container">
+		<!-- Use the header area for the website name or logo -->
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">Precious Window & Door</a>
+			</div>
+			<!-- Use the nav area to add hyperlinks to other pages within the website -->
+			<div>
+				<ul class="nav navbar-nav", id="menu">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="product.html">Products</a></li>
+					<li><a href="service.html">Services</a></li>
+					<li><a href="project.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right desktop">
+					<li><a href="#" style="color:#FF8C00;"><span class="glyphicon glyphicon-earphone"></span><strong>Call Us Now 917-528-6526</strong></a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div class="section">
+			<!-- Use this area for the heading of each page consistently -->
+			<div class="well">
+				<div class="container text-center">
+					<h3>Your request has been submitted successfully.</h3>
+					<p>Thank you for contacting us. We will get back to you ASAP!!!</p>
+				</div>
+			</div>
+			
+			<div class="container text-center"> <!-- start of form data -->
+				<h3>Here is the information that you entered:</h3></br>
+				<article id="result"> 
+					<script> <!-- start the JavaScript to parse the form data -->
+						var requestInfo = location.search;
+						requestInfo = requestInfo.substring(1, requestInfo.length);
+						while (requestInfo.indexOf("+") !== -1) {
+							requestInfo = requestInfo.replace("+", " ");
+						}
+						requestInfo = decodeURIComponent(requestInfo);
+						var requestGroup = requestInfo.split("&");
+						for (var i = 0; i < requestGroup.length; i = i + 1) {
+							document.write("<p>" + requestGroup[i] + "</p>");
+						}
+					</script> <!-- end of JavaScript -->
+				</article></br>
+				<div>
+					<img src="images/customerService.jpg" alt="Customer Service">
+				</div>
+			</div> <!-- end of form data -->		
+		</div> <!-- end of section -->
+		
+		<!-- Footer -->
+		<footer>
+			<div id="copyright">
+				<p>&copy; Copyright 2017. All Rights Reserved.
+				<br>
+				<a href="mailto:jeannie@preciouswindow.com">Info@Preciouswindow.com</a></p>
+			</div>
+			<div id="social">
+				<p>Connect with us:
+				<a href="https://www.facebook.com/jeannie.lai.1?fref=search"><img src="images/fblogo.png" alt="Facebook logo"></a></p>
+			</div>
+		</footer>
+		
+	</div>
+ </body>
+ </html>

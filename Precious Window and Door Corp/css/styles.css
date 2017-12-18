@@ -1,0 +1,313 @@
+/*
+      Project: Create a website for Precious Window & Door Dorp.
+      
+      This is the Style sheet for Precious Window & Door Corp. Website 
+
+      Author: Li
+      Date:   12/10/2017
+
+      Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body {
+	background-color: #COCOCO;
+}
+
+/* Style for navigation header */
+.navbar-header a {
+	font-family: 'Lobster Two', cursive;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 1em;
+}
+
+.navbar {
+    margin-bottom: 0px;
+	background-color: #FFFAFA;
+}
+
+/* Style for navigation menu items */
+#menu {
+	font-family: 'Noto Serif', serif;	
+	font-size: 23px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #FFFAFA;
+	padding-top: 0.5em;
+}
+
+/* Style for selected menu item */
+#menu li a:hover {
+	background: #ADD8E6;
+}
+
+/* Style for banner picture */
+img {
+	max-width: 100%;
+	padding-bottom: 2em;
+}
+
+/* Style for mobile first design - default setting */
+.mobile {
+	display: inline;
+}
+
+/* Style hides the desktop class - default setting */
+.desktop {
+	display: none;
+}
+
+main h4 {
+	font-weight: bold;
+}
+main p {
+	font-family: 'PT Serif', serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/* Style for heading of each webpage */
+.well {
+	padding: 0em 0.5em 0em 0.5em;
+	background-color: #98FB98;
+	margin: 0px;
+}
+
+/* Style for the video */
+.video {
+	padding: 1em;
+	text-align: center;
+	margin: 0px;
+}
+
+video {
+	border: 0.5em ridge #FFFFFF;
+	height: auto;
+	max-width: 100%;
+}
+
+/* Style for product images on the Products page*/
+.section .row {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.row h1 {
+	font-size: 20px;
+	text-align: left;
+}
+
+.row .col-md-6 {
+	text-align: center;
+}
+.row .col-md-6 ul li {
+	text-align: left;
+	list-style-type: none;
+}
+
+/* Style for different teams on the Services page */
+#team h1 {
+	text-align: center;
+	font-weight: bold;
+}
+
+#team img {
+	width: 350px;
+	height: 260px;
+}
+
+/* Style for carousel slideshow for Project photo gallery */
+.item {
+	width: 1000px;
+	height: 500px;
+	padding-left: 8em;
+	margin-top: 10px;
+	max-width: 100%;
+}
+
+#carousel {
+	width: 1000px;
+	height: 500px;
+	padding-left: 1em;
+}
+
+/* Style for form on the Contact page */
+label {
+	text-align: left;
+}
+
+#user, #phone, #email {
+	width: 35em;
+}
+
+#sel, #apptDate{
+	width: 20em;
+}
+
+#comment {
+	width: 43em;
+	height: 5em;
+}
+
+#errorText #errorMessage {
+	color: red;
+}
+
+/* Style for footer specifies font size, text alignment and top margin */
+footer {
+	font-size: 1em;
+	text-align: center;
+	color: #000000;
+	background-color: FFFFFF;
+	margin-top: -0.2em;
+	padding: 2em;
+}
+
+/* Style for anchor elements within the footer */
+footer a {
+	color:#0000FF;
+	text-decoration: none;
+}
+
+/* Style rule for social media icons */
+#social img {
+	padding: 0.5em;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}	
+
+/* Style for the pop-up calendar */
+#cal {
+	display: none;
+	position: absolute;
+	left: 200px;
+	top: 250px;
+	background: white;
+	color: black;
+	border-style: solid;
+    border-color: rgb(201, 76, 76);
+	padding: 10px;
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#cal table {
+  clear: both;
+}
+
+/* Style for the month heading */
+#cal table caption {
+	text-align: center;
+	font-weight: bold;
+	font-size: 14pt;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #ABEBC6;
+}
+
+/* Style for the calendar heading */
+#cal table th {
+   text-align: right;
+}
+
+#cal table th, #cal table td {
+   width: 2em;
+   padding: 4px;
+}
+
+#cal table td {
+	color: green;
+	text-align: right;
+	cursor: pointer;
+}
+
+#prev {
+   float: left;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#next {
+   float: right;
+   padding: 4px;
+   cursor: pointer;
+}
+
+#cal table td.futuredate {
+   color: #8B008B;
+}
+
+#cal table td.futuredate:hover, #prev:hover, #next:hover, #close:hover {
+   background: pink;
+   color: red;
+}
+
+#close {
+   color: black;
+   float: right;
+   padding: 0 4px;
+   cursor: pointer;
+}
+
+#close span {
+   font-size: 20pt;
+}
+
+/* Style for the form data */
+#result {
+	font-size: 20px;
+	border-style: solid;
+    border-color: #228B22;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+/* Media query for tablet viewport targets screen size with a minimum width of 660px */
+/* ----------------------------------------------------------------------------------*/
+
+@media only screen and  (min-width: 660px) {
+		/* Style specifies to hide the mobile class */
+	.mobile {
+		display: none;
+	}
+	
+	/* Style specifies to display the desktop class */
+	.desktop {
+		display: inline;
+	}
+	
+	.navbar-header {
+		display: block;
+		text-align: center;
+	}
+	
+	.navbar-right {
+		display: none;
+	}
+	
+}	
+
+/* Media query for desktop viewport targets screens with a minimum width of 830px */
+/* ------------------------------------------------------------------------------ */
+@media only screen and (min-width: 830px) {
+	.navbar-right {
+		display: inline;
+	}
+	
+}
+	
